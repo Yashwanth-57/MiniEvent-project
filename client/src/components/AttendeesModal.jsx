@@ -1,6 +1,6 @@
 // src/components/AttendeesModal.jsx
 import React from "react";
-import "../styles/AttendeesModal.css";
+import "../styles/attendeesModal.css";
 
 const AttendeesModal = ({ show, onClose, attendees }) => {
   if (!show) return null; // Hide modal if show=false
