@@ -1,0 +1,111 @@
+/* ---------------- General Container ---------------- */
+.create-event-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.create-event-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form Layout */
+.create-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input & Textarea */
+.create-event-form input[type="text"],
+.create-event-form input[type="number"],
+.create-event-form input[type="datetime-local"],
+.create-event-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.create-event-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Input focus effect */
+.create-event-form input:focus,
+.create-event-form textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+/* File Input */
+.create-event-form input[type="file"] {
+  padding: 6px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Submit Button */
+.create-event-form button {
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.create-event-form button:hover {
+  background: linear-gradient(135deg, #357ABD, #4a90e2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.create-event-form button:disabled {
+  background: #a1c4fd;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-event-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .create-event-form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Additional polished hover effects */
+.create-event-form input:hover,
+.create-event-form textarea:hover {
+  border-color: #357ABD;
+}
+
+/* Optional: subtle shadow on the container hover */
+.create-event-container:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}

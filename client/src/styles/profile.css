@@ -1,0 +1,125 @@
+/* ===============================
+   PROFILE PAGE – PREMIUM UI
+================================ */
+
+.profile-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4%;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* ================== TITLE ================== */
+
+.profile-container h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* ================== PROFILE CARD ================== */
+
+.profile-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 18px;
+  padding: 2.2rem 2.5rem;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 20px 40px rgba(30, 64, 175, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  animation: fadeUp 0.6s ease;
+}
+
+/* ================== INFO ROW ================== */
+
+.profile-card p {
+  font-size: 1.05rem;
+  color: #334155;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-card p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Labels */
+.profile-card strong {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* ================== ROLE BADGE ================== */
+
+.profile-card p:last-child {
+  justify-content: center;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.profile-stats {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.profile-stats p {
+  margin: 6px 0;
+}
+
+
+/* ================== ANIMATION ================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== TABLET ================== */
+
+@media (max-width: 768px) {
+  .profile-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .profile-card {
+    padding: 2rem;
+  }
+}
+
+/* ================== MOBILE ================== */
+
+@media (max-width: 480px) {
+  .profile-container h2 {
+    font-size: 1.9rem;
+  }
+
+  .profile-card {
+    padding: 1.6rem;
+  }
+
+  .profile-card p {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
