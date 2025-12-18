@@ -391,3 +391,4 @@ Admin-level alerts
 Yashwanth
 B.E IT recently completed 2025
 Aspiring Full-Stack Developer
+567yashwanth@gmail.com
