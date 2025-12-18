@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 
 import { useSelector } from "react-redux";
 
