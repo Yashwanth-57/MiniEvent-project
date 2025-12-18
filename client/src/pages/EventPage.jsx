@@ -1,11 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { joinEvent, leaveEvent } from "../api/RSVPApi";
+import { joinEvent, leaveEvent } from "../api/rsvpapi";
 import { getEventById, deleteEvent } from "../api/eventApi";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
-import "../styles/EventPage.css";
+import "../styles/eventPage.css";
 import AttendeesModal from "../components/AttendeesModal";
 
 const EventPage = () => {

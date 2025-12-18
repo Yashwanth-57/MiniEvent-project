@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getJoinedEvents } from "../api/eventApi";
-import { leaveEvent } from "../api/rsvpApi";
+import { leaveEvent } from "../api/rsvpapi";
 import EventCard from "../components/EventCard";
 import "../styles/dashboard.css"; // SAME CSS
 
