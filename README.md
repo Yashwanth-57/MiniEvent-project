@@ -1,4 +1,4 @@
-# Frontend Developer Intern Assignment – Submission
+
 
 ## 📌 Project Title
 
@@ -10,7 +10,7 @@ A production-grade full-stack web application built to demonstrate modern fronte
 ## 🚀 Live Demo
 https://mini-event-project.vercel.app/
 
-## 🎯 Assignment Alignment Summary
+## 🎯 Alignment Summary
 
 This project satisfies **all core requirements** of the given assignment:
 
